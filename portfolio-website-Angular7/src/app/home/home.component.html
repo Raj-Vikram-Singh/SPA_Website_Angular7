@@ -1,3 +1,42 @@
-<p>
-  home works!
-</p>
+<section id ="showcase">
+  <div class="container">
+    <h1>Affordable Professional Web Design</h1>
+    <p>Harry Potter learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses magical powers of his own. At Hogwarts School of Witchcraft and Wizardry, Harry embarks on the adventure of a lifetime. He learns the high-flying sport of Quidditch and plays a thrilling game with living chess pieces on his way to face a Dark wizard bent on destroying him.</p>
+  </div>
+
+</section>
+
+<section id="newsLetter">
+  <div class="container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form novalidate>
+      <span style="color: red; padding-right: 5px" ng-show = "error_message">{{error_message}}</span>
+      
+      <input type="email" [(ngModel)] = 'email' name='email' placeholder="Enter Email...">
+      <button type="submit" class="button1" (click) = 'validEmail(email)'>Subscribe</button>
+
+    </form>
+  </div>
+</section>
+
+<section id="boxes">
+  <div class="container">
+    
+    <div class="box">
+      <img src="/assets/images/html5.jpg">
+      <h3>HTML5 Markup</h3>
+      <p>Harry Potter learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses magical powers of his own. At Hogwarts.</p>
+    </div>
+    <div class="box" >
+      <img id = "css" src="/assets/images/css3.jpg">
+      <h3>CSS3 Styling</h3>
+      <p>Harry Potter learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses magical powers of his own. At Hogwarts.</p>
+    </div>
+    <div class="box">
+      <img src="/assets/images/graphic.png">
+      <h3>Graphic Desing</h3>
+      <p>Harry Potter learns on his eleventh birthday that he is the orphaned son of two powerful wizards and possesses magical powers of his own. At Hogwarts.</p>
+    </div>
+  </div>
+
+</section>

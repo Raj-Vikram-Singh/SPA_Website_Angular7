@@ -1,3 +1,71 @@
-<p>
-  our-services works!
-</p>
+<section id="newsLetter">
+  <div class="container">
+    <h2>Subscribe to Our Newsletter</h2>
+    <form novalidate>
+      <span style="color: red; padding-right: 5px;" ng-show = "error_message">{{error_message}}</span>
+      <input type="email" placeholder="Enter Email..." [(ngModel)] = "email" name='email'>
+      <button type="submit" class="button1" (click) = "validEmail(email)">Subscribe</button>
+
+    </form>
+  </div>
+</section>
+
+<section id = "main">
+  <div class="container">
+    <article id ="main-col">
+      <h1 class="pageTitle">Services</h1>
+
+    <ul id="services">
+      
+      <li>
+        <h3>Website Design</h3>
+        <p>outsmart a dangerous werewolf and finally deal with the truth. Master advance magic, cross the barriers of time and change the course of more than one life.</p>
+      </li>
+
+      <li>
+        <h3>Website Maintenance</h3>
+        <p>outsmart a dangerous werewolf and finally deal with the truth. Master advance magic, cross the barriers of time and change the course of more than one life.</p>
+      </li>
+
+      <li>
+        <h3>Website Hosting</h3>
+        <p>outsmart a dangerous werewolf and finally deal with the truth. Master advance magic, cross the barriers of time and change the course of more than one life.</p>
+      </li>
+
+
+    </ul>
+    
+    </article>
+
+     <aside id="sideBar">
+      <div class="dark">
+        <h3>Feedback Form</h3>
+      <form class="feedback" novalidate>
+        <div>
+        <label>Name : </label><span style = "color: red" ng-show = "error.name">{{error.name}}</span><br>
+        <input type="text" name="name" id="name" [(ngModel)]='feedbackObj.name' placeholder="name..." /><br>
+        </div>
+        <div>
+        <label>Email :</label> <span style = "color: red" ng-show = "error.email">{{error.email}}</span><br>
+        <input type="email" name="email" id = "email" [(ngModel)]='feedbackObj.email' placeholder="email..."><br>
+        </div>
+        <div>
+        <label>Message : </label><span style = "color: red" ng-show = "error.msg">{{error.msg}}</span><br>
+        <textarea id="message" name = 'message' [(ngModel)]='feedbackObj.message' placeholder="feedback..."></textarea>
+        </div>
+
+        <button type="submit" class="button1" (click)= "validFeedBackForm(feedbackObj)">  Submit </button>
+
+
+
+
+
+      </form>
+      
+      </div>
+    </aside>
+      
+
+  </div>
+
+</section>
