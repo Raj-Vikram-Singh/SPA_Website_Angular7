@@ -7,7 +7,7 @@ import { ThankyouComponent } from './thankyou/thankyou.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 
 const routes: Routes = [
-
+  {path: '', redirectTo: 'home', pathMatch: 'full'},
   {path: 'home' , component: HomeComponent},
   {path: 'about' , component: AboutComponent},
   {path: 'service', component: OurServicesComponent},
